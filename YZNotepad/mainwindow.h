@@ -15,7 +15,37 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_actionNew_triggered();
+
+    void on_actionOpen_triggered();
+
+    void on_actionSave_triggered();
+
+    void on_actionSave_As_triggered();
+
+    void on_actionEncrypt_triggered();
+
+    void on_actionDecrypt_triggered();
+
+    void on_actionCut_triggered();
+
+    void on_actionCopt_triggered();
+
+    void on_actionPaste_triggered();
+
+    void on_actionRedo_triggered();
+
+    void on_actionUndo_triggered();
+
+    void on_actionPrint_triggered();
+
+    void on_actionExit_triggered();
+
+    void on_actionAbout_YZNotebook_triggered();
+
 private:
     Ui::MainWindow *ui;
+    QString file_path_;
 };
 #endif // MAINWINDOW_H
